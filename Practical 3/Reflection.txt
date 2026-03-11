@@ -1,0 +1,3 @@
+During Practical 3, I learned how to use Git for version control and GitHub for remote collaboration. 
+I found branching and merging particularly interesting as it showed how teams can work on code simultaneously.
+Setting up GitHub Pages was surprisingly straightforward,  where I created my own personal website using guides and research, and I'm really proud of it.

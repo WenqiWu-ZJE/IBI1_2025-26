@@ -1,0 +1,4 @@
+Hello, my name is Wu Wenqi.
+I like travelling, gaming and going to concerts.
+I am enjoying learning IBI1 and exploring programming this year.
+I am happy that I can push my repo from Visual Studio Code to GitHub!
