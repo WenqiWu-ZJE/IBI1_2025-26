@@ -21,9 +21,9 @@
 
 
 age = int(input("Enter the age of the patient in years (less than 100): "))
-weight = int(input("Enter the weight of the patient in kg (between 20 and 80): "))
+weight = float(input("Enter the weight of the patient in kg (between 20 and 80): "))
 gender = input("Enter the gender of the patient (male or female): ")
-cr = int(input("Enter the creatinine concentration of the patient in umol/l (between 0 and 100): "))
+cr = float(input("Enter the creatinine concentration of the patient in umol/l (between 0 and 100): "))
 
 errors = []
 
