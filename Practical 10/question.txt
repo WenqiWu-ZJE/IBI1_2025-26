@@ -1,0 +1,10 @@
+Question:
+How has the relationship between the DALYs in China and the United Kingdom changed over time? Are they becoming more similar or less similar?
+
+Code location:
+The code to answer this question starts at line 51 in dalys.py.
+
+Result and discussion:
+The plot shows that China's DALYs have decreased dramatically from about 41,105 in 1990 to about 22,271 in 2019, while the UK's DALYs decreased more gradually from about 27,107 to about 20,957 over the same period. The gap between the two countries has narrowed significantly: in 1990 the difference was approximately 13,997, but by 2019 it was only about 1,314. This means the two countries' DALYs values are becoming much more similar over time.
+
+This result is expected, as China has experienced rapid economic development and improvements in healthcare over the past three decades, leading to a significant reduction in disease burden. The UK, already a developed country in 1990, had less room for improvement. The convergence reflects China's progress in reducing preventable diseases, improving access to healthcare, and raising living standards.
