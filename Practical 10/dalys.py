@@ -1,14 +1,12 @@
-import os
+from pathlib import Path
 import pandas as pd
 import matplotlib.pyplot as plt
-import numpy as np
 
-os.chdir("/Users/mac/Desktop/IBI1/IBI1_2025-26/IBI1_2025-26/Practical 10")
-print(os.getcwd())
-print(os.listdir())
+SCRIPT_DIR = Path(__file__).resolve().parent
+data_file = SCRIPT_DIR / "dalys-rate-from-all-causes.csv"
 
 # 1. Import the dataset
-dalys_data = pd.read_csv("dalys-rate-from-all-causes.csv")
+dalys_data = pd.read_csv(data_file)
 print(dalys_data.head(5))
 print(dalys_data.info())
 print(dalys_data.describe())
