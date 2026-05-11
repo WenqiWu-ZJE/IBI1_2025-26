@@ -1,12 +1,19 @@
+from pathlib import Path
 import re
 import matplotlib.pyplot as plt
+
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+input_file = SCRIPT_DIR / 'Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa'
+valid_stop_codons = ['TAA', 'TAG', 'TGA']
+
+
 target_stop = input("Enter a stop codon (TAA, TAG, TGA): ").upper().strip()
-if target_stop not in ['TAA', 'TAG', 'TGA']:
+if target_stop not in valid_stop_codons:
     print("Invalid stop codon.")
     exit()
 pattern = rf'(?=(ATG(?:...)*{target_stop}))'
 codon_counts = {}
-input_file = 'Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa'
 with open(input_file, 'r') as f:
     content = f.read()
     entries = re.split(r'\n>', content)
@@ -24,5 +31,8 @@ if codon_counts:
     plt.figure(figsize=(15, 10))
     plt.pie(sizes, labels=labels, autopct='%1.1f%%')
     plt.title(f"Codon Usage for Genes with {target_stop}")
-    plt.savefig(f"re_codon_distribution_{target_stop}.png")
-    print(f"Success! Plot saved.")
+    output_file = SCRIPT_DIR / f"re_codon_distribution_{target_stop}.png"
+    plt.savefig(output_file)
+    print(f"Success! Plot saved to {output_file}.")
+else:
+    print(f"No in-frame codons were found for genes containing {target_stop}.")
