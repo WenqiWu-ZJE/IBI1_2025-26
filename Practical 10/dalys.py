@@ -57,7 +57,7 @@ uk = dalys_data.loc[dalys_data.Entity == "United Kingdom", ["Year", "DALYs"]]
 plt.figure()
 plt.plot(china.Year.values, china.DALYs.values, "r+-", label="China")
 plt.plot(uk.Year.values, uk.DALYs.values, "bo-", label="United Kingdom")
-plt.xticks(china.Year, rotation=-90)
+plt.xticks(china.Year, rotation=-45)
 plt.xlabel("Year")
 plt.ylabel("DALYs (rate per 100,000)")
 plt.title("DALYs over time: China vs United Kingdom")
