@@ -1,0 +1,3 @@
+The formative feedback gave my Week 3 commit messages 2 out of 3 because they were somewhat descriptive but repetitive and lacked specific details of changes.
+
+To improve this, my future commit messages now describe the edited files, the purpose of each change, and the practical requirement being addressed.
