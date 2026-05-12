@@ -17,7 +17,8 @@ def run_sir(vaccination_percent):
 
     S = N - vaccinated - infected_start
     I = infected_start
-    R = 0
+    # Vaccinated individuals are treated as recovered/immune.
+    R = vaccinated
 
     I_list = [I]
 
