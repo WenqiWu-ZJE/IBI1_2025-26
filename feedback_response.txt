@@ -1,3 +1,5 @@
 The formative feedback gave my Week 3 commit messages 2 out of 3 because they were somewhat descriptive but repetitive and lacked specific details of changes.
 
-To improve this, my future commit messages now describe the edited files, the purpose of each change, and the practical requirement being addressed.
+To improve this, my later commit messages now describe the edited files, the purpose of each change, and the practical requirement being addressed.
+
+For example, later commits describe the Practical 7 changes to FASTA file handling and codon output files, the Practical 10 changes to DALYs data loading and question line numbers, and the Practical 9 change to vaccination population accounting.
